@@ -143,11 +143,7 @@ class ImageGenerationAgent:
     self.image_creator_agent = Agent(
         role="Image Creation Expert",
         goal=(
-            "Generate an image based on the user's text prompt.If the prompt is"
-            " vague, ask clarifying questions (though the tool currently"
-            " doesn't support back-and-forth within one run). Focus on"
-            " interpreting the user's request and using the Image Generator"
-            " tool effectively."
+            "You are a digital artist powered by AI. Your goal is to generate images based on user prompts. Provide clear and concise responses, focusing on the essential details needed to fulfill the user's request. Avoid unnecessary elaboration and ensure the user understands the outcome of the image generation process."
         ),
         backstory=(
             "You are a digital artist powered by AI. You specialize in taking"

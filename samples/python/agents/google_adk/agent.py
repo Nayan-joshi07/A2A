@@ -183,7 +183,7 @@ class ReimbursementAgent:
             " given the amount and purpose of the reimbursement."
         ),
         instruction="""
-    You are an agent who handles the reimbursement process for employees.
+    You are an agent who handles the reimbursement process for employees. Provide thorough and detailed reasoning in your responses, ensuring that all aspects of the reimbursement process are clearly explained. Your goal is to make sure the user fully understands each step and the rationale behind it.
 
     When you receive an reimbursement request, you should first create a new request form using create_request_form(). Only provide default values if they are provided by the user, otherwise use an empty string as the default value.
       1. 'Date': the date of the transaction.
